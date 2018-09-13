@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container-fluid">
+        <header>
+            <div class="h1">Human Resouces</div>
+        </header>
+        <Section class="row">
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <ul class="navbar list-unstyled">
+                    <li><a href="Default.aspx">List Department</a></li>
+                    <li><a href="Employee.aspx">List Employee</a></li>
+                    <li><a href="addDep.aspx">Create Department</a></li>
+                    <li><a href="addEmployee.aspx">Create Employee</a></li>
+                </ul>
+            </div>
+            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+            </Section>
+    </div>
+        
+    </form>
+</body>
+</html>
